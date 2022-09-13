@@ -15,9 +15,9 @@ sizePicker.addEventListener('submit', function(event) {
 
 function makeGrid(height, width) {
     let table = document.createElement('table')
-        for (var w=0; w<width; w++){
+        for (var w=0; w<height; w++){
             const row = table.insertRow();
-            for (var h=0; h<height; h++){
+            for (var h=0; h<width; h++){
                 const cell = row.insertCell();
                 cell.addEventListener('click', function(event){
                     const color = pickacolor.value;
